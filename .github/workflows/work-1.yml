@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: sayHi
-        run: echo "Hi
+        run: echo "Hi"
       - name: sayMyName
         run: echo "${{ github.actor }}"
