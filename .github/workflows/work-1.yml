@@ -10,5 +10,17 @@ jobs:
     steps:
       - name: sayHi
         run: echo "Hi"
+      - name: hello1
+        run: sleep 10
+      - name: sayMyName
+        run: echo "${{ github.actor }}"
+        
+  hello2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: sayHi
+        run: echo "Hi"
+      - name: hello2
+        run: sleep 20
       - name: sayMyName
         run: echo "${{ github.actor }}"
